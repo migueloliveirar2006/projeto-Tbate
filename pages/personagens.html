@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens | Epheotus Archive</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/personagens.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">Epheotus Archive</h2>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="volumes.html">Volumes</a></li>
+            <li><a href="mundo.html">Mundo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="page-banner">
+
+        <h1>↓Personagens↓</h1>
+
+        <p>
+            Conheça os principais personagens que moldam a história de
+            The Beginning After the End.
+        </p>
+
+    </section>
+
+    <!-- Pesquisa -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Pesquisar personagem...">
+
+    </section>
+
+    <!-- Filtros -->
+
+    <section class="filters">
+
+        <button class="filter-btn active">Todos</button>
+        <button class="filter-btn">Humanos</button>
+        <button class="filter-btn">Elfos</button>
+        <button class="filter-btn">Asuras</button>
+        <button class="filter-btn">Bestas</button>
+
+    </section>
+
+    <!-- Personagens -->
+<section class="characters-grid">
+
+    <article class="character-card"
+        data-raca="humano"
+        data-name="arthur leywin">
+
+        <img src="../img/personagens/arthur2.png"
+            alt="Arthur Leywin">
+
+        <h3>Arthur Leywin</h3>
+
+        <p>
+            Protagonista da obra e reencarnação do Rei Grey.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="arthur">
+            Ver detalhes
+        </button>
+
+    </article>
+
+    <article class="character-card"
+        data-raca="elfo"
+        data-name="tessia eralith">
+
+        <img src="../img/personagens/tessia.jpg"
+            alt="Tessia Eralith">
+
+        <h3>Tessia Eralith</h3>
+
+        <p>
+            Princesa dos elfos e amiga de infância de Arthur.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="tessia">
+            Ver detalhes
+        </button>
+
+    </article>
+
+    <article class="character-card"
+        data-raca="asura"
+        data-name="sylvie">
+
+        <img src="../img/personagens/sylvie.jpg"
+            alt="Sylvie">
+
+        <h3>Sylvie</h3>
+
+        <p>
+            Companheira de Arthur e filha de Sylvia.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="sylvie">
+            Ver detalhes
+        </button>
+
+    </article>
+
+    <article class="character-card"
+        data-raca="besta"
+        data-name="regis">
+
+        <img src="../img/personagens/regis.jpg"
+            alt="Regis">
+
+        <h3>Regis</h3>
+
+        <p>
+            Arma senciente criada através do Éter.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="regis">
+            Ver detalhes
+        </button>
+
+    </article>
+
+    <article class="character-card"
+        data-raca="elfo"
+        data-name="virion eralith">
+
+        <img src="../img/personagens/virion.jpg"
+            alt="Virion Eralith">
+
+        <h3>Virion Eralith</h3>
+
+        <p>
+            Antigo rei dos elfos e mentor de Arthur.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="virion">
+            Ver detalhes
+        </button>
+
+    </article>
+
+    <article class="character-card"
+        data-raca="humano"
+        data-name="bairon wykes">
+
+        <img src="../img/personagens/bairon.jpg"
+            alt="Bairon Wykes">
+
+        <h3>Bairon Wykes</h3>
+
+        <p>
+            Uma das Lanças mais poderosas de Dicathen.
+        </p>
+
+        <button class="btn detalhes-personagem"
+            data-personagem="bairon">
+            Ver detalhes
+        </button>
+
+    </article>
+
+</section>
+      
+    
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="nomePersonagem"></h2>
+
+        <p id="descricaoPersonagem"></p>
+
+    </div>
+
+</div>
+</main>
+
+<footer>
+
+   <p>© <span id="ano"></span> Epheotus Archive - Projeto acadêmico sem fins lucrativos.</p>
+
+</footer>
+<button id="backToTop" class="back-to-top" title="Voltar ao topo">
+    ↑
+</button>
+
+<script src="../js/script.js"></script>
+<script src="../js/personagens.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+/* ===========================
+   BANNER
+=========================== */
+
+.page-banner{
+    text-align: center;
+    padding: 160px 20px 80px;
+    background: linear-gradient(rgba(11,11,18,.8), rgba(11,11,18,.95)),
+                url("../img/mundo/banner.jpg") center/cover no-repeat;
+}
+
+.page-banner h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.page-banner p{
+    max-width: 700px;
+    margin: auto;
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   SEÇÕES
+=========================== */
+
+.continentes,
+.racas,
+.poder,
+.timeline{
+
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+
+}
+
+.continentes h2,
+.racas h2,
+.poder h2,
+.timeline h2{
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: var(--secondary);
+    margin-bottom: 50px;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+
+}
+
+.card{
+
+    background: var(--bg2);
+    border: 1px solid rgba(168,85,247,.2);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+.card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 30px rgba(124,58,237,.35);
+
+}
+
+.card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    font-size:1.5rem;
+
+    color:var(--secondary);
+
+    margin:20px;
+
+}
+
+.card p{
+
+    color:var(--gray);
+
+    margin:0 20px 20px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.timeline ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.timeline li{
+
+    background:var(--bg2);
+
+    padding:20px;
+
+    border-left:5px solid var(--secondary);
+
+    border-radius:10px;
+
+    color:var(--gray);
+
+    transition:.3s;
+
+}
+
+.timeline li:hover{
+
+    transform:translateX(10px);
+
+    background:#1b1b2d;
+
+}

@@ -1,0 +1,212 @@
+/* Banner principal */
+.hero {
+
+    height: 90vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("../img/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.hero h1 {
+
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    font-size: 20px;
+    max-width: 700px;
+
+}
+
+
+/* Botão principal */
+
+.btn {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 12px 30px;
+
+    background: #7b2cff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+.btn:hover {
+
+    background: #5314c9;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Seção de introdução */
+
+.introducao {
+
+    padding: 60px 10%;
+
+    text-align: center;
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+.introducao h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.introducao p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Cards da home */
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 50px;
+
+    background: #080808;
+
+}
+
+
+.card {
+
+    width: 250px;
+
+    padding: 20px;
+
+    background: #1b1b1b;
+
+    color:white;
+
+    border-radius: 15px;
+
+    text-align:center;
+
+    transition:0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.card img {
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+.spoiler-warning{
+     margin-top: var(--navbar-height);
+
+    position: relative;
+
+    background: #5b1f1f;
+
+    color: white;
+
+    padding: 18px 50px 18px 20px;
+
+    text-align: center;
+
+    border-bottom: 2px solid #b8860b;
+
+}
+
+.spoiler-warning p{
+
+    margin: 0;
+
+}
+
+.close-warning{
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.close-warning:hover{
+
+    color: #ffd369;
+
+    transform: scale(1.15);
+
+}
+:root{
+    --navbar-height: 90px;
+}

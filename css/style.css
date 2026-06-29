@@ -1,0 +1,290 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0b12;
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ===========================
+   VARIÁVEIS
+=========================== */
+
+:root{
+    --bg: #0b0b12;
+    --bg2: #141420;
+    --primary: #7c3aed;
+    --secondary: #a855f7;
+    --text: #ffffff;
+    --gray: #c9c9d3;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    
+    width: 100%;
+    
+    left: 0;
+
+    background: rgba(11,11,18,.85);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.navbar{
+    height: var(--navbar-height);
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+}
+
+.logo{
+
+    font-family:'Cinzel',serif;
+
+    font-size:1.8rem;
+
+    color:var(--secondary);
+}
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+}
+
+.menu a{
+
+    transition:.3s;
+}
+
+.menu a:hover{
+
+    color:var(--secondary);
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn{
+
+    background: var(--primary);
+    color: white;
+
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+
+    border:2px solid var(--primary);
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    transition:.3s;
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+  
+    padding: 140px 10% 80px;
+
+
+}
+
+.hero-content{
+
+    flex:1;
+}
+
+.hero-content span{
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    letter-spacing:3px;
+}
+
+.hero-content h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:3.8rem;
+
+    margin:20px 0;
+}
+
+.hero-content p{
+
+    color:var(--gray);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    width: 290px;      /* pode aumentar para 600px ou 650px */
+    max-width: 100%;
+    height: auto;
+}
+.hero-logo{
+
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,.5));
+
+}
+:root{
+    --navbar-height: 90px;
+}
+
+main{
+    padding-top: var(--navbar-height);
+}
+.back-to-top{
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+
+    display: block;
+
+    transition: .3s;
+
+    z-index: 999;
+
+}
+
+.back-to-top:hover{
+
+    transform: translateY(-5px);
+
+    background: #7a52d6;
+
+}

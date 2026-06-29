@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Epheotus Archive</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">Epheotus Archive</h2>
+
+        <ul class="menu">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="volumes.html">Volumes</a></li>
+            <li><a href="mundo.html">Mundo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+
+        </ul>
+
+        
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="page-banner">
+
+    <h1>↓Entre em Contato↓</h1>
+
+    <p>
+        Tem alguma dúvida, sugestão ou encontrou alguma informação incorreta?
+        Envie uma mensagem para nossa equipe.
+    </p>
+
+</section>
+
+<section class="contato-container">
+
+    <div class="contato-info">
+
+        <h2>Epheotus Archive</h2>
+
+        <p>
+            Este é um projeto acadêmico criado para reunir informações sobre o
+            universo de <strong>The Beginning After the End</strong>.
+        </p>
+
+        <div class="info-item">
+
+            <h3>📧 Email</h3>
+
+            <p>contato@epheotusarchive.com</p>
+
+        </div>
+
+        <div class="info-item">
+
+            <h3>🌐 Redes</h3>
+
+              <a href="https://github.com/" target="_blank">GitHub</a>
+
+        </div>
+
+    </div>
+
+    <form id="contatoForm">
+
+        <div class="input-group">
+
+            <label for="nome">Nome</label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome">
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email">
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="assunto">Assunto</label>
+
+            <input
+                type="text"
+                id="assunto"
+                placeholder="Assunto">
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="mensagem">Mensagem</label>
+
+            <textarea
+                id="mensagem"
+                rows="6"
+                placeholder="Digite sua mensagem"></textarea>
+
+        </div>
+
+        <button class="btn" type="submit">
+
+            Enviar Mensagem
+
+        </button>
+
+        <p id="mensagem-status"></p>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© <span id="ano"></span> Epheotus Archive - Projeto acadêmico sem fins lucrativos.</p>
+
+</footer>
+
+<button id="backToTop" class="back-to-top" title="Voltar ao topo">
+    ↑
+</button>
+<script src="../js/script.js"></script>
+<script src="../js/contato.js"></script>
+
+</body>
+</html>
